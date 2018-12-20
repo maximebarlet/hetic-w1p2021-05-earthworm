@@ -1,0 +1,64 @@
+body{
+    background-image: url(./medias/img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.only__credits {
+    position: absolute;
+    top: 43%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./medias/img/credits__name.png);
+  }
+  .credit__button{
+    position: absolute;
+    top: 43%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./medias/img/Credits.png);
+  }
+  .return__button {
+    position: absolute;
+    top: 90%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./medias/img/Return.png);
+  }
+  
+  .character__Yellow {
+    position: absolute;
+    left: 8px;
+    top: 628px;
+    background-image: url(./medias/img/Gilet.png);
+  }
+  
+  .character__CRS {
+    position: absolute;
+    left: 970px;
+    top: 629px;
+    background-image: url(./medias/img/CRS.png);
+  }
+  
+  .sound__on {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    display: block;
+    background-image: url(./medias/img/son.png);
+  }
+  
+  .sound__off {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    display: none;
+    background-image: url(./medias/img/son-cut.png);
+  }
+  
+  .sound__on.is-active {
+    display: none;
+  }
+  
+  .sound__off.is-active {
+    display: block;
+  }
