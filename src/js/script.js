@@ -27,33 +27,41 @@ function game() {
     if (key === toPress1) {
       console.log('win');
       barValue += 5;
+      if (barValue > 100) {
+        barValue = 100;
+      }
       
       document.getElementById('bar').style.width = barValue + '%';
       toPress1 = setKeyToPress(keysJ1);
-    } else if (key !== toPress1) {
-      console.log('lost');
-      barValue -= 5;
+    } 
+      
       if (barValue < 0) {
         barValue = 0;
+      
       }
       
       document.getElementById('bar').style.width = barValue + '%';
       console.log(barValue);
-    }
+    
   });
   oxo.inputs.listenKeys(keysJ2, function (key) {
     if (key === toPress2) {
       console.log('win');
       barValue -= 5;
+      if (barValue < 0) {
+        barValue = 0;
+      }
       document.getElementById('bar').style.width = barValue + '%';
       console.log(barValue);
       toPress2 = setKeyToPress(keysJ2);
-    } else if (key !== toPress2) {
-      console.log('lost');
-      barValue += 5;
+    } 
+      
+      if (barValue > 100) {
+        barValue = 100;
+      }
       document.getElementById('bar').style.width = barValue + '%';
       console.log(barValue);
-    }
+    
   });
 
 
@@ -116,9 +124,9 @@ function setKeyToPress(keys) {
       document.getElementById('L').classList.replace("keyL", "keyL-hidden");
       document.getElementById('K').classList.replace("keyK", "keyK-hidden");
     }
-    if (barValue == 0) {
+    if (barValue === 0) {
       oxo.screens.loadScreen('end');
-    } else if (barValue == 100) {
+    } else if (barValue === 100) {
       oxo.screens.loadScreen('end');
     }
 

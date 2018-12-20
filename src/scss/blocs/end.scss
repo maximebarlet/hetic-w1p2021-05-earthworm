@@ -1,17 +1,28 @@
-.end {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: monospace;
+.h1{
+  font-size: 50px;
+}
+.h2{
+  font-size: 35px;
+}
+.box1er{
+width: 200px;
+height: 500px;
+background-color: green;
+}
+.box2eme{
+  width: 200px;
+  height: 500px;
+  background-color: red;
 }
 
-.end__title {
-  font-size: 32px;
-}
+.credits{
+  width: 200px;
+  height: 500px;
+  background-color: blue;
 
-.end__score {
-  font-size: 32px;
-  margin: 20px;
+}
+.again{
+  width: 200px;
+  height: 150px;
+  background-color: white;
 }
