@@ -33,6 +33,9 @@ function game() {
     } else if (key !== toPress1) {
       console.log('lost');
       barValue -= 5;
+      if (barValue < 0) {
+        barValue = 0;
+      }
       
       document.getElementById('bar').style.width = barValue + '%';
       console.log(barValue);
